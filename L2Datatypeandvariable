@@ -1,8 +1,0 @@
-#include<iostream>
-using namespace std;
-int main(){
-    int a = 123678;
-    cout<< a << endl;
-
-    int size = sizeof(a);   // here sizeof variable ka data type ka size return krata h
-    cout<<"Size of a:"<<size<<endl;
