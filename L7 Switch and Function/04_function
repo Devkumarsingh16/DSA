@@ -1,0 +1,140 @@
+                               //Q1: power of any number
+
+#include<iostream>
+using namespace std;
+
+int pow(int a,int b){
+
+    int ans = 1;
+     for(int i = 1;i<=b;i++){
+        ans = ans*a;
+     }
+     return ans;
+
+}
+
+int main(){
+    int a,b;
+    cin>> a >> b;
+
+    int ans = pow(a,b);
+    cout<<ans;
+    return 0;
+}
+
+                              // Q2: odd or even
+
+#include<iostream>
+using namespace std;
+
+void  isoddEven(int num){
+  
+    if(num%2==0){
+        cout<<"number is even";
+    }
+    else{
+        cout<<"number is odd";
+    }
+
+}
+int main(){
+    int num;
+    cin>> num;
+
+    isoddEven(num); 
+    return 0;
+}
+
+                           //Q3: factorial
+
+
+#include<iostream>
+using namespace std;
+
+int fact(int p){
+     
+    int fact = 1;
+    for(int i = 1;i<=p;i++){
+     fact = fact*i;
+    }
+    return fact;
+}
+
+
+int nCr( int n,int r){
+
+    int num = fact(n);
+
+    int denom = fact(r)*fact(n-r);
+
+    int ans = (num/denom);
+    return ans;
+
+
+}
+int main(){
+    int n,r;
+    cin>> n >> r;
+
+    int ans = nCr(n,r);
+    cout<<ans;
+    return 0;
+}
+
+
+                         //Q4:Counting
+
+#include<iostream>
+using namespace std;
+
+void printcounting(int n){
+
+    for(int i = 1;i<=n;i++){
+        cout<<i<<" ";
+    }
+}
+
+int main(){
+
+int n;
+cout<<"Enter value of n :";
+cin>>n;
+
+printcounting(n);
+
+return 0;
+}
+
+                                 // Q5: check prime or not
+
+#include<iostream>
+using namespace std;
+
+  // 1>prime,0>odd
+bool isPrime(int n){
+
+    for(int i = 2;i<n;i++){
+        if(n%2==0){
+            return 0;
+        }
+    }
+    return 1;
+
+
+}
+
+int main(){
+
+    int n;
+    cout<<"Enter a value of n";
+    cin>>n;
+
+    if(isPrime(n)){
+        cout<<"number is prime"<<endl;
+    }
+    else{
+    cout<<"number is not prime";
+    }
+    return 0;
+
+}
