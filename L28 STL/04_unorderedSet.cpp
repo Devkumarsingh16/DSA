@@ -1,0 +1,38 @@
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    unordered_set<int> s;
+
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(40);
+    s.insert(10);
+    s.insert(20);
+    s.insert(90);
+    s.insert(50);
+
+    for(auto i = s.begin(); i != s.end(); i++){
+        cout << *i <<" ";
+    }
+
+                       // unordered multiset,
+      unordered_multiset<int> s;
+
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(40);
+    s.insert(10);
+    s.insert(20);
+    s.insert(90);
+    s.insert(50);
+
+    for(auto i = s.begin(); i != s.end(); i++){
+        cout << *i <<" ";
+    }
+
+}
